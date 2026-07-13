@@ -1,0 +1,17 @@
+BiquadHS is a high-shelf biquad equalizer with voltage-controlled Cut, Slope and Gain.
+
+Description:
+This module applies a high-shelf filter to boost or cut high frequencies above a variable cutoff point using a biquad algorithm.
+
+Pins:
+Input – Audio input
+Cut – Cutoff frequency control (0.5 = ~440 Hz, uses same exponential scaling )
+Slope – Transition steepness / Q control (0.0001 to 0.999)
+Gain – Boost or cut amount (-120 dB to +48 dB)
+Output – Filtered audio output
+
+Usage:
+Ideal for tone shaping, brightening dull sounds, taming harsh highs, mastering EQ, spectral enhancement, and creative sound design.
+
+Note:
+Filter coefficients are only recalculated when parameters change (for efficiency). Includes built-in denormal prevention. 

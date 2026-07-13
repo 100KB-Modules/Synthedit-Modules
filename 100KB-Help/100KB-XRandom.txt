@@ -1,0 +1,26 @@
+XRandom is a 64K wavetable noise generator with three modes.
+
+Description:
+This module generates random noise in the range of approximately -5 to +5.
+
+
+Modes:
+Mode 0 – Continuous
+Generates new random values every sample (full speed noise).
+Mode 1 – Gated
+When Gate > 0: Holds the current random value.
+When Gate ≤ 0: Outputs zero.
+Mode 2 – Mixed
+When Gate > 0: Generates new random values at sample rate.
+When Gate ≤ 0: Outputs zero (phase frozen).
+
+
+Pins:
+Gate – Audio input (used in Gated & Mixed modes)
+Out – Random noise output
+Mode – Integer (0 = Continuous, 1 = Gated, 2 = Mixed)
+
+Usage:
+Ideal for rhythmic noise, percussion, textures, and experimental sound design.
+
+Note: The random sequence is deterministic (repetitive), not truly random, but it works well for audio purposes.
