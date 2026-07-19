@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
-    <master_container type="Container" handle="2056134245" name="Main" ViewOpenFlags="256" skin="default2">
+<Document file_format="150000" vst_latencyCompensation="1" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
+    <master_container type="Container" handle="481882319" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
         </plugs>
@@ -8,35 +8,41 @@
         <PatchManager>
             <ProgramNames/>
             <Parameters>
-                <param type="10" handle="8593905" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="897313176" moduleParamId="1"/>
-                <param type="4" handle="372044384" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="897313176" moduleParamId="2"/>
-                <param type="6" handle="745036312" shortName="Knob" vstParameterNumber="0" module="13327" moduleParamId="0">
+                <param type="6" shortName="Knob" vstParameterNumber="0" module="13327" moduleParamId="0">
                     <patch-list>
-                        <s>9.68</s>
+                        <s>3</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
-                <param type="6" handle="804790330" shortName="Knob" vstParameterNumber="1" module="1127021529" moduleParamId="0" RangeMaximum="1">
+                <param type="10" handle="430965327" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="747974001" moduleParamId="1"/>
+                <param type="4" handle="453211128" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="747974001" moduleParamId="2"/>
+                <param type="6" handle="1210333630" shortName="Knob" vstParameterNumber="1" module="1067121944" moduleParamId="0">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>2.4</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
-                <param type="10" handle="1404426996" private="true" hostControl="49">
+                <param type="10" handle="1546039792" private="true" hostControl="49">
                     <patch-list>
                         <s repeat="128"></s>
                     </patch-list>
                 </param>
-                <param type="6" handle="1531090890" shortName="Knob" vstParameterNumber="2" module="747255942" moduleParamId="0" RangeMaximum="5">
+                <param type="6" handle="1718106115" shortName="Knob" vstParameterNumber="3" module="910499563" moduleParamId="0">
                     <patch-list>
-                        <s>0.919998</s>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1735352345" shortName="Knob" vstParameterNumber="2" module="761712058" moduleParamId="0">
+                    <patch-list>
+                        <s>9.04</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
-                <param type="10" handle="1606642353" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="897313176" moduleParamId="0"/>
+                <param type="10" handle="1957928907" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="747974001" moduleParamId="0"/>
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="1638639685" name="Gain" m_locked="true" skin="default">
+            <module type="Container" handle="1029313672" name="LBBP" m_locked="true" skin="default">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -46,9 +52,9 @@
                     <plug name="Output" direction="1"/>
                     <plug direction="1"/>
                 </plugs>
-                <structRect l="24" r="108" t="408" b="523"/>
+                <structRect l="216" r="300" t="396" b="511"/>
                 <modules>
-                    <module type="SE Text Entry4" handle="1656241270">
+                    <module type="SE Text Entry4" handle="324086071">
                         <plugs>
                             <plug default="Knob"/>
                             <plug default="heading 3"/>
@@ -58,67 +64,67 @@
                         <structRect l="572" r="680" t="276" b="436"/>
                         <panelRect l="32" r="97" t="76" b="99"/>
                     </module>
-                    <module type="SE PatchMemory Float" handle="747255942">
+                    <module type="SE PatchMemory Float" handle="910499563">
                         <structRect l="12" r="132" t="84" b="168"/>
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
-                    <module type="Image3" handle="56604306">
+                    <module type="Image3" handle="1205334154">
                         <plugs>
                             <plug default="shiny_cap.png" idx="1"/>
                         </plugs>
                         <structRect l="428" r="548" t="240" b="393"/>
                         <panelRect l="32" r="97" t="24" b="89"/>
                     </module>
-                    <module type="Image3" handle="259900480">
+                    <module type="Image3" handle="2041271105">
                         <plugs>
                             <plug default="moog_knob" idx="1"/>
                         </plugs>
                         <structRect l="428" r="548" t="60" b="213"/>
                         <panelRect l="32" r="97" t="24" b="89"/>
                     </module>
-                    <module type="SE ImageTinted XP" handle="152777418" name="Tinted Bitmap Image">
+                    <module type="SE ImageTinted XP" handle="1483674948" name="Tinted Bitmap Image">
                         <plugs>
                             <plug default="moog_knob_L2" idx="1"/>
                         </plugs>
                         <structRect l="560" r="680" t="48" b="236"/>
                         <panelRect l="32" r="96" t="24" b="88"/>
                     </module>
-                    <module type="FloatToVolts" handle="542090303">
+                    <module type="FloatToVolts" handle="1464311086">
                         <structRect l="176" r="260" t="264" b="300"/>
                     </module>
-                    <module type="IO Mod" handle="1755688441">
+                    <module type="IO Mod" handle="12531483">
                         <plugs>
-                            <plug name="Output" tiedtomod="1638639685" tiedtopin="7"/>
+                            <plug name="Output" tiedtomod="1029313672" tiedtopin="7"/>
                             <plug direction="1"/>
                         </plugs>
                         <structRect l="296" r="356" t="288" b="312"/>
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="511064684" lineType="1" fMod="747255942" tMod="1656241270" fPlg="10" tPlg="7"/>
-                    <line type="Line" handle="1458708275" lineType="1" fMod="747255942" tMod="1656241270" fPlg="9" tPlg="6"/>
-                    <line type="Line" handle="1613324689" lineType="1" fMod="747255942" tMod="56604306" fPlg="11" tPlg="6"/>
-                    <line type="Line" handle="449087911" lineType="1" fMod="747255942" tMod="56604306" fPlg="10" tPlg="4"/>
-                    <line type="Line" handle="1222619063" lineType="1" fMod="747255942" tMod="56604306" fPlg="9" tPlg="3"/>
-                    <line type="Line" handle="2046686866" lineType="1" fMod="747255942" tMod="56604306" fPlg="8"/>
-                    <line type="Line" handle="636528451" lineType="1" fMod="747255942" tMod="259900480" fPlg="11" tPlg="6"/>
-                    <line type="Line" handle="1816320592" lineType="1" fMod="747255942" tMod="259900480" fPlg="10" tPlg="4"/>
-                    <line type="Line" handle="296440363" lineType="1" fMod="747255942" tMod="259900480" fPlg="9" tPlg="3"/>
-                    <line type="Line" handle="789222412" lineType="1" fMod="747255942" tMod="259900480" fPlg="8"/>
-                    <line type="Line" handle="195151872" lineType="1" fMod="747255942" tMod="152777418" fPlg="10" tPlg="4"/>
-                    <line type="Line" handle="1312737570" lineType="1" fMod="747255942" tMod="152777418" fPlg="9" tPlg="3"/>
-                    <line type="Line" handle="1355269441" lineType="1" fMod="747255942" tMod="542090303" fPlg="13" tPlg="1"/>
-                    <line type="Line" handle="1416847950" lineType="1" fMod="542090303" tMod="1755688441" fPlg="2"/>
+                    <line type="Line" handle="1246155600" lineType="1" fMod="910499563" tMod="324086071" fPlg="10" tPlg="7"/>
+                    <line type="Line" handle="945308336" lineType="1" fMod="910499563" tMod="324086071" fPlg="9" tPlg="6"/>
+                    <line type="Line" handle="1859176046" lineType="1" fMod="910499563" tMod="1205334154" fPlg="11" tPlg="6"/>
+                    <line type="Line" handle="1336682591" lineType="1" fMod="910499563" tMod="1205334154" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="1420175875" lineType="1" fMod="910499563" tMod="1205334154" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="1183456582" lineType="1" fMod="910499563" tMod="1205334154" fPlg="8"/>
+                    <line type="Line" handle="1141099035" lineType="1" fMod="910499563" tMod="2041271105" fPlg="11" tPlg="6"/>
+                    <line type="Line" handle="1213435760" lineType="1" fMod="910499563" tMod="2041271105" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="1244045051" lineType="1" fMod="910499563" tMod="2041271105" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="1992023613" lineType="1" fMod="910499563" tMod="2041271105" fPlg="8"/>
+                    <line type="Line" handle="1294911045" lineType="1" fMod="910499563" tMod="1483674948" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="743111066" lineType="1" fMod="910499563" tMod="1483674948" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="1002954454" lineType="1" fMod="910499563" tMod="1464311086" fPlg="13" tPlg="1"/>
+                    <line type="Line" handle="1818604120" lineType="1" fMod="1464311086" tMod="12531483" fPlg="2"/>
                 </lines>
-                <PanelWndPosition l="321" r="386" t="195" b="270"/>
+                <PanelWndPosition l="409" r="474" t="219" b="294"/>
                 <PanelLocation l="415" r="613" t="5" b="186"/>
-                <StructLocation l="91" r="835" t="252" b="787"/>
+                <StructLocation l="80" r="824" t="210" b="745"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="0" r="180" t="0" b="163"/>
             </module>
-            <module type="Container" handle="54845200" name="Slope" m_locked="true" skin="default">
+            <module type="Container" handle="298426966" name="Q" m_locked="true" skin="default">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -128,9 +134,9 @@
                     <plug name="Output" direction="1"/>
                     <plug direction="1"/>
                 </plugs>
-                <structRect l="24" r="108" t="276" b="391"/>
+                <structRect l="72" r="156" t="336" b="451"/>
                 <modules>
-                    <module type="SE Text Entry4" handle="252996908">
+                    <module type="SE Text Entry4" handle="1535231431">
                         <plugs>
                             <plug default="Knob"/>
                             <plug default="heading 3"/>
@@ -140,67 +146,71 @@
                         <structRect l="572" r="680" t="276" b="436"/>
                         <panelRect l="32" r="97" t="76" b="99"/>
                     </module>
-                    <module type="SE PatchMemory Float" handle="1127021529">
+                    <module type="SE PatchMemory Float" handle="761712058">
                         <structRect l="12" r="132" t="84" b="168"/>
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
-                    <module type="Image3" handle="1702848731">
+                    <module type="Image3" handle="961669910">
                         <plugs>
                             <plug default="shiny_cap.png" idx="1"/>
                         </plugs>
                         <structRect l="428" r="548" t="240" b="393"/>
                         <panelRect l="32" r="97" t="24" b="89"/>
                     </module>
-                    <module type="Image3" handle="99955483">
+                    <module type="Image3" handle="1167386890">
                         <plugs>
                             <plug default="moog_knob" idx="1"/>
                         </plugs>
                         <structRect l="428" r="548" t="60" b="213"/>
                         <panelRect l="32" r="97" t="24" b="89"/>
                     </module>
-                    <module type="SE ImageTinted XP" handle="1467218633" name="Tinted Bitmap Image">
+                    <module type="SE ImageTinted XP" handle="1446197889" name="Tinted Bitmap Image">
                         <plugs>
                             <plug default="moog_knob_L2" idx="1"/>
                         </plugs>
                         <structRect l="560" r="680" t="48" b="236"/>
                         <panelRect l="32" r="96" t="24" b="88"/>
                     </module>
-                    <module type="FloatToVolts" handle="640391681">
+                    <module type="FloatToVolts" handle="1249744346">
                         <structRect l="176" r="260" t="264" b="300"/>
                     </module>
-                    <module type="IO Mod" handle="417889712">
+                    <module type="IO Mod" handle="825679989">
                         <plugs>
-                            <plug name="Output" tiedtomod="54845200" tiedtopin="7"/>
+                            <plug name="Output" tiedtomod="298426966" tiedtopin="7"/>
                             <plug direction="1"/>
                         </plugs>
                         <structRect l="296" r="356" t="288" b="312"/>
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="22653085" lineType="1" fMod="640391681" tMod="417889712" fPlg="2"/>
-                    <line type="Line" handle="47202312" lineType="1" fMod="1127021529" tMod="640391681" fPlg="13" tPlg="1"/>
-                    <line type="Line" handle="1495556441" lineType="1" fMod="1127021529" tMod="1467218633" fPlg="9" tPlg="3"/>
-                    <line type="Line" handle="724385745" lineType="1" fMod="1127021529" tMod="1467218633" fPlg="10" tPlg="4"/>
-                    <line type="Line" handle="228950617" lineType="1" fMod="1127021529" tMod="99955483" fPlg="8"/>
-                    <line type="Line" handle="483945973" lineType="1" fMod="1127021529" tMod="99955483" fPlg="9" tPlg="3"/>
-                    <line type="Line" handle="1399693697" lineType="1" fMod="1127021529" tMod="99955483" fPlg="10" tPlg="4"/>
-                    <line type="Line" handle="153824256" lineType="1" fMod="1127021529" tMod="99955483" fPlg="11" tPlg="6"/>
-                    <line type="Line" handle="1017400869" lineType="1" fMod="1127021529" tMod="1702848731" fPlg="8"/>
-                    <line type="Line" handle="141003772" lineType="1" fMod="1127021529" tMod="1702848731" fPlg="9" tPlg="3"/>
-                    <line type="Line" handle="1746871494" lineType="1" fMod="1127021529" tMod="1702848731" fPlg="10" tPlg="4"/>
-                    <line type="Line" handle="1952395159" lineType="1" fMod="1127021529" tMod="1702848731" fPlg="11" tPlg="6"/>
-                    <line type="Line" handle="1459783013" lineType="1" fMod="1127021529" tMod="252996908" fPlg="9" tPlg="6"/>
-                    <line type="Line" handle="1732796096" lineType="1" fMod="1127021529" tMod="252996908" fPlg="10" tPlg="7"/>
+                    <line type="Line" handle="220455494" lineType="1" fMod="1249744346" tMod="825679989" fPlg="2"/>
+                    <line type="Line" handle="305771075" lineType="1" fMod="761712058" tMod="1249744346" fPlg="13" tPlg="1"/>
+                    <line type="Line" handle="180405460" lineType="1" fMod="761712058" tMod="1446197889" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="463524943" lineType="1" fMod="761712058" tMod="1446197889" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="199938991" lineType="1" fMod="761712058" tMod="1167386890" fPlg="8"/>
+                    <line type="Line" handle="640009523" lineType="1" fMod="761712058" tMod="1167386890" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="1565815385" lineType="1" fMod="761712058" tMod="1167386890" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="1652808742" lineType="1" fMod="761712058" tMod="1167386890" fPlg="11" tPlg="6"/>
+                    <line type="Line" handle="187551457" lineType="1" fMod="761712058" tMod="961669910" fPlg="8"/>
+                    <line type="Line" handle="775608905" lineType="1" fMod="761712058" tMod="961669910" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="577604686" lineType="1" fMod="761712058" tMod="961669910" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="1076044925" lineType="1" fMod="761712058" tMod="961669910" fPlg="11" tPlg="6"/>
+                    <line type="Line" handle="1738260179" lineType="1" fMod="761712058" tMod="1535231431" fPlg="9" tPlg="6"/>
+                    <line type="Line" handle="47771710" lineType="1" fMod="761712058" tMod="1535231431" fPlg="10" tPlg="7"/>
                 </lines>
-                <PanelWndPosition l="345" r="410" t="211" b="286"/>
+                <PanelWndPosition l="433" r="498" t="219" b="294"/>
                 <PanelLocation l="415" r="613" t="5" b="186"/>
-                <StructLocation l="-6" r="737" t="255" b="790"/>
+                <StructLocation l="80" r="824" t="210" b="745"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="0" r="180" t="0" b="163"/>
             </module>
-            <module type="Container" handle="17954" name="cut" m_locked="true" skin="default">
+            <module type="100KB-24dB-Lowpass-Filter" handle="866660651">
+                <structRect l="384" r="444" t="72" b="132"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="Container" handle="1722037095" name="CutOff" m_locked="true" skin="default">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -210,7 +220,93 @@
                     <plug name="Output" direction="1"/>
                     <plug direction="1"/>
                 </plugs>
-                <structRect l="24" r="108" t="144" b="259"/>
+                <structRect l="72" r="156" t="180" b="295"/>
+                <modules>
+                    <module type="SE Text Entry4" handle="1500601882">
+                        <plugs>
+                            <plug default="Knob"/>
+                            <plug default="heading 3"/>
+                            <plug default="0"/>
+                            <plug default="0"/>
+                        </plugs>
+                        <structRect l="572" r="680" t="276" b="436"/>
+                        <panelRect l="32" r="97" t="76" b="99"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1067121944">
+                        <structRect l="12" r="132" t="84" b="168"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="Image3" handle="1616229217">
+                        <plugs>
+                            <plug default="shiny_cap.png" idx="1"/>
+                        </plugs>
+                        <structRect l="428" r="548" t="240" b="393"/>
+                        <panelRect l="32" r="97" t="24" b="89"/>
+                    </module>
+                    <module type="Image3" handle="315676342">
+                        <plugs>
+                            <plug default="moog_knob" idx="1"/>
+                        </plugs>
+                        <structRect l="428" r="548" t="60" b="213"/>
+                        <panelRect l="32" r="97" t="24" b="89"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="38755649" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="moog_knob_L2" idx="1"/>
+                        </plugs>
+                        <structRect l="560" r="680" t="48" b="236"/>
+                        <panelRect l="32" r="96" t="24" b="88"/>
+                    </module>
+                    <module type="FloatToVolts" handle="1753320146">
+                        <structRect l="176" r="260" t="264" b="300"/>
+                    </module>
+                    <module type="IO Mod" handle="1050444153">
+                        <plugs>
+                            <plug name="Output" tiedtomod="1722037095" tiedtopin="7"/>
+                            <plug direction="1"/>
+                        </plugs>
+                        <structRect l="296" r="356" t="288" b="312"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1803088316" lineType="1" fMod="1067121944" tMod="1500601882" fPlg="10" tPlg="7"/>
+                    <line type="Line" handle="1511372373" lineType="1" fMod="1067121944" tMod="1500601882" fPlg="9" tPlg="6"/>
+                    <line type="Line" handle="1141361199" lineType="1" fMod="1067121944" tMod="1616229217" fPlg="11" tPlg="6"/>
+                    <line type="Line" handle="953473144" lineType="1" fMod="1067121944" tMod="1616229217" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="232611520" lineType="1" fMod="1067121944" tMod="1616229217" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="1346175404" lineType="1" fMod="1067121944" tMod="1616229217" fPlg="8"/>
+                    <line type="Line" handle="525251911" lineType="1" fMod="1067121944" tMod="315676342" fPlg="11" tPlg="6"/>
+                    <line type="Line" handle="1243059399" lineType="1" fMod="1067121944" tMod="315676342" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="879668302" lineType="1" fMod="1067121944" tMod="315676342" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="274453711" lineType="1" fMod="1067121944" tMod="315676342" fPlg="8"/>
+                    <line type="Line" handle="328465338" lineType="1" fMod="1067121944" tMod="38755649" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="478564797" lineType="1" fMod="1067121944" tMod="38755649" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="319725208" lineType="1" fMod="1067121944" tMod="1753320146" fPlg="13" tPlg="1"/>
+                    <line type="Line" handle="1638028026" lineType="1" fMod="1753320146" tMod="1050444153" fPlg="2"/>
+                </lines>
+                <PanelWndPosition l="393" r="458" t="219" b="294"/>
+                <PanelLocation l="415" r="613" t="5" b="186"/>
+                <StructLocation l="80" r="824" t="210" b="745"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="0" r="180" t="0" b="163"/>
+            </module>
+            <module type="SE Scope3 XP" handle="747974001">
+                <structRect l="564" r="996" t="156" b="360"/>
+                <panelRect l="240" r="240" t="136" b="136"/>
+            </module>
+            <module type="Container" handle="17954" name="Knob" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="0"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Output" direction="1"/>
+                    <plug direction="1"/>
+                </plugs>
+                <structRect l="12" r="96" t="24" b="139"/>
                 <modules>
                     <module type="SE Text Entry4" handle="1925382961">
                         <plugs>
@@ -259,82 +355,78 @@
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="1531093918" lineType="1" fMod="13327" tMod="1925382961" fPlg="10" tPlg="7"/>
-                    <line type="Line" handle="1363635565" lineType="1" fMod="13327" tMod="1925382961" fPlg="9" tPlg="6"/>
-                    <line type="Line" handle="1358438629" lineType="1" fMod="13327" tMod="962950790" fPlg="11" tPlg="6"/>
-                    <line type="Line" handle="770872938" lineType="1" fMod="13327" tMod="962950790" fPlg="10" tPlg="4"/>
-                    <line type="Line" handle="168269852" lineType="1" fMod="13327" tMod="962950790" fPlg="9" tPlg="3"/>
-                    <line type="Line" handle="314044775" lineType="1" fMod="13327" tMod="962950790" fPlg="8"/>
-                    <line type="Line" handle="341287937" lineType="1" fMod="13327" tMod="103103446" fPlg="11" tPlg="6"/>
-                    <line type="Line" handle="1866815481" lineType="1" fMod="13327" tMod="103103446" fPlg="10" tPlg="4"/>
-                    <line type="Line" handle="1134973838" lineType="1" fMod="13327" tMod="103103446" fPlg="9" tPlg="3"/>
-                    <line type="Line" handle="1186831767" lineType="1" fMod="13327" tMod="103103446" fPlg="8"/>
-                    <line type="Line" handle="576878945" lineType="1" fMod="13327" tMod="1392867693" fPlg="10" tPlg="4"/>
-                    <line type="Line" handle="1698388527" lineType="1" fMod="13327" tMod="1392867693" fPlg="9" tPlg="3"/>
-                    <line type="Line" handle="23973" lineType="1" fMod="13327" tMod="13819" fPlg="13" tPlg="1"/>
                     <line type="Line" handle="29882" lineType="1" fMod="13819" tMod="11502" fPlg="2"/>
+                    <line type="Line" handle="23973" lineType="1" fMod="13327" tMod="13819" fPlg="13" tPlg="1"/>
+                    <line type="Line" handle="1698388527" lineType="1" fMod="13327" tMod="1392867693" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="576878945" lineType="1" fMod="13327" tMod="1392867693" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="1186831767" lineType="1" fMod="13327" tMod="103103446" fPlg="8"/>
+                    <line type="Line" handle="1134973838" lineType="1" fMod="13327" tMod="103103446" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="1866815481" lineType="1" fMod="13327" tMod="103103446" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="341287937" lineType="1" fMod="13327" tMod="103103446" fPlg="11" tPlg="6"/>
+                    <line type="Line" handle="314044775" lineType="1" fMod="13327" tMod="962950790" fPlg="8"/>
+                    <line type="Line" handle="168269852" lineType="1" fMod="13327" tMod="962950790" fPlg="9" tPlg="3"/>
+                    <line type="Line" handle="770872938" lineType="1" fMod="13327" tMod="962950790" fPlg="10" tPlg="4"/>
+                    <line type="Line" handle="1358438629" lineType="1" fMod="13327" tMod="962950790" fPlg="11" tPlg="6"/>
+                    <line type="Line" handle="1363635565" lineType="1" fMod="13327" tMod="1925382961" fPlg="9" tPlg="6"/>
+                    <line type="Line" handle="1531093918" lineType="1" fMod="13327" tMod="1925382961" fPlg="10" tPlg="7"/>
                 </lines>
-                <PanelWndPosition l="297" r="362" t="203" b="278"/>
+                <PanelWndPosition l="345" r="410" t="235" b="310"/>
                 <PanelLocation l="415" r="613" t="5" b="186"/>
-                <StructLocation l="68" r="812" t="237" b="772"/>
+                <StructLocation l="17" r="761" t="192" b="728"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="0" r="180" t="0" b="163"/>
             </module>
-            <module type="SE Scope3 XP" handle="897313176">
-                <structRect l="444" r="1008" t="120" b="420"/>
-                <panelRect l="240" r="240" t="168" b="168"/>
-            </module>
-            <module type="Oscillator" handle="993408743">
-                <plugs>
-                    <plug default="0" idx="2"/>
-                </plugs>
-                <structRect l="24" r="108" t="36" b="120"/>
-            </module>
-            <module type="Sound Out" handle="242905875">
+            <module type="Sound Out" handle="760974593">
                 <plugs>
                     <plug name="Output"/>
                     <plug/>
                 </plugs>
-                <structRect l="360" r="420" t="60" b="84"/>
+                <structRect l="516" r="576" t="120" b="144"/>
             </module>
-            <module type="100KB-BiquadHS" handle="1331755420">
+            <module type="Oscillator" handle="2119671645">
                 <plugs>
-                    <plug default="50" idx="1"/>
-                    <plug default="50"/>
+                    <plug default="0" idx="2"/>
+                    <plug default="0" idx="6"/>
                 </plugs>
-                <structRect l="216" r="276" t="72" b="132"/>
-                <panelRect l="0" r="0" t="0" b="0"/>
+                <structRect l="144" r="228" t="36" b="120"/>
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="615716351" lineType="1" fMod="993408743" tMod="1331755420" fPlg="3"/>
-            <line type="Line" handle="70304641" lineType="1" fMod="17954" tMod="1331755420" fPlg="7" tPlg="1">
+            <line type="Line" handle="173756460" lineType="1" fMod="17954" tMod="2119671645" fPlg="7"/>
+            <line type="Line" handle="1878876285" lineType="1" fMod="2119671645" tMod="747974001" fPlg="3" tPlg="6">
                 <nodes>
-                    <node x="138" y="162"/>
-                    <node x="138" y="90"/>
+                    <node x="294" y="78"/>
+                    <node x="294" y="162"/>
                 </nodes>
             </line>
-            <line type="Line" handle="651163451" lineType="1" fMod="54845200" tMod="1331755420" fPlg="7" tPlg="2">
+            <line type="Line" handle="465170030" lineType="1" fMod="2119671645" tMod="866660651" fPlg="3"/>
+            <line type="Line" handle="133505098" lineType="1" fMod="1722037095" tMod="866660651" fPlg="7" tPlg="1">
                 <nodes>
-                    <node x="174" y="294"/>
-                    <node x="174" y="102"/>
+                    <node x="318" y="198"/>
+                    <node x="318" y="90"/>
                 </nodes>
             </line>
-            <line type="Line" handle="1740285729" lineType="1" fMod="1638639685" tMod="1331755420" fPlg="7" tPlg="3">
+            <line type="Line" handle="1973644558" lineType="1" fMod="298426966" tMod="866660651" fPlg="7" tPlg="2">
                 <nodes>
-                    <node x="198" y="426"/>
-                    <node x="198" y="114"/>
+                    <node x="342" y="354"/>
+                    <node x="342" y="102"/>
                 </nodes>
             </line>
-            <line type="Line" handle="67121213" lineType="1" fMod="1331755420" tMod="897313176" fPlg="4" tPlg="6"/>
-            <line type="Line" handle="1602733047" lineType="1" fMod="1331755420" tMod="242905875" fPlg="4">
+            <line type="Line" handle="979427357" lineType="1" fMod="1029313672" tMod="866660651" fPlg="7" tPlg="3">
                 <nodes>
-                    <node x="330" y="126"/>
-                    <node x="330" y="66"/>
+                    <node x="366" y="414"/>
+                    <node x="366" y="114"/>
                 </nodes>
             </line>
+            <line type="Line" handle="1085461042" lineType="1" fMod="866660651" tMod="747974001" fPlg="4" tPlg="7">
+                <nodes>
+                    <node x="486" y="126"/>
+                    <node x="486" y="174"/>
+                </nodes>
+            </line>
+            <line type="Line" handle="1983938876" lineType="1" fMod="866660651" tMod="760974593" fPlg="4"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
@@ -345,12 +437,12 @@
         <panel_rect l="16" r="312" t="16" b="216"/>
     </master_container>
     <PluginList>
-        <Plugin id="100KB-BiquadHS" name="100KB-BiquadHS" flags="256" category="100KB-Modules/Filters" helpUrl="100KB-Help/100KB-BiquadHS.txt">
+        <Plugin id="100KB-24dB-Lowpass-Filter" name="100KB-24dB-Lowpass-Filter" flags="256" category="100KB-Modules/Filters">
             <Audio>
-                <Pin name="Input" datatype="float" rate="audio"/>
-                <Pin name="Cut" datatype="float" rate="audio" default="0.5"/>
-                <Pin name="Slope" datatype="float" rate="audio" default="0.5"/>
-                <Pin name="Gain" datatype="float" rate="audio" metadata="24,-60,24,-60"/>
+                <Pin name="Input" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Cutoff" datatype="float" rate="audio" default="0.5" linearInput="true"/>
+                <Pin name="Q" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="LP-BP" datatype="float" rate="audio" linearInput="true"/>
                 <Pin name="Output" datatype="float" rate="audio" direction="out"/>
             </Audio>
         </Plugin>

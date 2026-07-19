@@ -657,21 +657,6 @@
                                 <s repeat="110">0.949666</s>
                             </patch-list>
                         </param>
-                        <param type="8" handle="32128607" shortName="Polyphony" ignorePC="true" private="true" module="15409" hostControl="21" RangeMinimum="1" RangeMaximum="128">
-                            <patch-list>
-                                <s>6</s>
-                            </patch-list>
-                        </param>
-                        <param type="8" handle="302319780" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="15409" hostControl="14" RangeMinimum="1" RangeMaximum="128">
-                            <patch-list>
-                                <s>768</s>
-                            </patch-list>
-                        </param>
-                        <param type="8" handle="396795363" shortName="ReserveVoices" ignorePC="true" private="true" module="15409" hostControl="22" RangeMaximum="128">
-                            <patch-list>
-                                <s>3</s>
-                            </patch-list>
-                        </param>
                     </Parameters>
                 </PatchManager>
                 <modules>
@@ -930,47 +915,50 @@
                 <structRect l="972" r="1032" t="348" b="384"/>
             </module>
             <module type="100KB-FDelay" handle="1161823470">
+                <plugs>
+                    <plug default="100" idx="2"/>
+                </plugs>
                 <structRect l="792" r="900" t="300" b="372"/>
                 <panelRect l="0" r="0" t="0" b="0"/>
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="1900867000" lineType="1" fMod="1161823470" tMod="13232" fPlg="4"/>
-            <line type="Line" handle="978020631" lineType="1" fMod="15409" tMod="1161823470" fPlg="8">
-                <nodes>
-                    <node x="762" y="234"/>
-                    <node x="762" y="306"/>
-                </nodes>
-            </line>
             <line type="Line" handle="350383266" lineType="1" fMod="791227591" tMod="15409" fPlg="1" tPlg="7">
                 <nodes>
                     <node x="618" y="126"/>
                     <node x="618" y="222"/>
                 </nodes>
             </line>
-            <line type="Line" handle="1126719015" lineType="1" fMod="1665499472" tMod="1161823470" fPlg="7" tPlg="5">
+            <line type="Line" handle="1760026144" lineType="1" fMod="15409" tMod="1161823470" fPlg="8">
                 <nodes>
-                    <node x="642" y="378"/>
-                    <node x="642" y="366"/>
+                    <node x="762" y="234"/>
+                    <node x="762" y="306"/>
                 </nodes>
             </line>
-            <line type="Line" handle="1866545342" lineType="1" fMod="2056764797" tMod="1161823470" fPlg="7" tPlg="2">
+            <line type="Line" handle="1621438057" lineType="1" fMod="17954" tMod="1161823470" fPlg="7" tPlg="1"/>
+            <line type="Line" handle="1247450885" lineType="1" fMod="2056764797" tMod="1161823470" fPlg="7" tPlg="2">
                 <nodes>
-                    <node x="306" y="354"/>
-                    <node x="306" y="330"/>
+                    <node x="294" y="354"/>
+                    <node x="294" y="330"/>
                 </nodes>
             </line>
-            <line type="Line" handle="213844082" lineType="1" fMod="17954" tMod="1161823470" fPlg="7" tPlg="1"/>
-            <line type="Line" handle="1809064987" lineType="1" fMod="672041188" tMod="1161823470" fPlg="7" tPlg="3">
+            <line type="Line" handle="260207955" lineType="1" fMod="672041188" tMod="1161823470" fPlg="7" tPlg="3">
                 <nodes>
-                    <node x="450" y="378"/>
-                    <node x="450" y="342"/>
+                    <node x="426" y="378"/>
+                    <node x="426" y="342"/>
                 </nodes>
             </line>
-            <line type="Line" handle="1922553163" lineType="1" fMod="1161823470" tMod="13232" fPlg="4" tPlg="1">
+            <line type="Line" handle="2013828149" lineType="1" fMod="1161823470" tMod="13232" fPlg="4" tPlg="1">
                 <nodes>
                     <node x="954" y="354"/>
                     <node x="954" y="366"/>
+                </nodes>
+            </line>
+            <line type="Line" handle="1503815277" lineType="1" fMod="1161823470" tMod="13232" fPlg="4"/>
+            <line type="Line" handle="1425000173" lineType="1" fMod="1665499472" tMod="1161823470" fPlg="7" tPlg="5">
+                <nodes>
+                    <node x="702" y="378"/>
+                    <node x="702" y="366"/>
                 </nodes>
             </line>
         </lines>
@@ -983,11 +971,11 @@
         <panel_rect l="16" r="312" t="16" b="216"/>
     </master_container>
     <PluginList>
-        <Plugin id="100KB-FDelay" name="100KB-FDelay" flags="256" category="100KB-Modules/Modulation" helpUrl="100KB-Help/100KB-FDelay.txt">
+        <Plugin id="100KB-FDelay" name="100KB-FDelay" flags="256" category="100KB-Modules/Delay" helpUrl="100KB-Help/100KB-FDelay.txt">
             <Audio>
                 <Pin name="Input" datatype="float" rate="audio"/>
                 <Pin name="Modulation" datatype="float" rate="audio" metadata="5,-5,5,-5"/>
-                <Pin name="Cut" datatype="float" rate="audio" default="10"/>
+                <Pin name="Cut" datatype="float" rate="audio" default="1"/>
                 <Pin name="Feedback" datatype="float" rate="audio"/>
                 <Pin name="Output" datatype="float" rate="audio" direction="out"/>
                 <Pin name="Max Delay (sec)" datatype="float" default="0.25" metadata="0,10"/>
