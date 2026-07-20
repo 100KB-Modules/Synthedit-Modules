@@ -36,7 +36,7 @@ Simple one-pole (6dB/oct) lowpass. Very light CPU. Ideal for smoothing CV and su
 Smooth cubic waveshaper. Adds warmth and grit with Drive & Saturation controls.
 
 ### **100KB-MIDI2-CC-Invert** – CC Inverter
-Inverts MIDI Control Change values (127 - original) while passing other messages through.
+Inverts MIDI Control Change values (255 - original) while passing other messages through.
 
 ---
 **Note:** All modules are optimized for efficiency with built-in denormal prevention where applicable.
