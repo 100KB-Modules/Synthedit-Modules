@@ -3,7 +3,9 @@
   <img src="Capture.JPG" width="900">
 </p>
 
+<div align="center">
 # 100KB Modules
+</div>
 Just Having Some Fun
 
 ## Modules
