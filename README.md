@@ -3,9 +3,9 @@
   <img src="Capture.JPG" width="900">
 </p>
 
-<div align="center">
+<div align="center"><h3>
 # 100KB Modules
-</div>
+</h3></div>
 Just Having Some Fun
 
 ## Modules
