@@ -38,5 +38,12 @@ Smooth cubic waveshaper. Adds warmth and grit with Drive & Saturation controls.
 ### **100KB-MIDI2-CC-Invert** – CC Inverter
 Inverts MIDI Control Change values (255 - original) while passing other messages through.
 
+### **100KB-DrawCircle** – GUI Circle Drawer
+Draws a filled circle with stroke on a colored background. Fully controllable position, size, and colors. Useful for meters and visual feedback.
+
+### **100KB-Array** – Float Array Memory
+Stores, reads, and writes float values with audio-rate indexing, optional file save/load, and list I/O. Ideal for wavetables, sequencers, or sample storage.
+
+### **100KB-5-BandPass-Filter** – Multi-Band Bandpass
+Up to five independent resonant bandpass filters with selectable active band count. Great for multi-band processing and formant effects.
 ---
-**Note:** All modules are optimized for efficiency with built-in denormal prevention where applicable.
