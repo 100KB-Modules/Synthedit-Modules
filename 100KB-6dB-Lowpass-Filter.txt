@@ -1,0 +1,16 @@
+100KB-6dB-Lowpass-Filter is a simple one-pole (6dBoct) feedback smoother  lowpass filter.
+
+Description
+This module provides a gentle, warm lowpass filter with a very light CPU footprint. It is ideal for smoothing control signals, removing high-frequency content from audio, or creating simple glidingglissando effects. The filter uses a basic feedback algorithm where the cutoff is controlled in real time via the Frequency pin.
+
+
+Pins
+Input – Audio input to be filtered
+Frequency – Cutoff control (audio rate capable). Higher values = higher cutoff frequency (brighter sound). Lower values = stronger smoothing  lower cutoff.
+Output – Filtered audio output
+
+Usage
+Perfect for smoothing modulation signals (envelopes, LFOs, random sources), gentle tone shaping on oscillators or noise, or as a simple anti-aliasing  de-noising stage. Because the cutoff responds instantly to the Frequency pin, it works great for expressive filter sweeps and dynamic movement.
+
+
+Ideal for subtle filtering, performance-friendly patches, and any situation where you want smooth, natural-sounding roll-off without heavy CPU usage.

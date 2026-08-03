@@ -1,0 +1,26 @@
+100KB-Vowel is a 10th-order IIR formant filter with five vowel presets and two switching modes.
+
+Description:
+This module applies vocal-like formant filtering to an input signal using predefined double-precision coefficient sets for the vowels A, E, I, O, and U. Each vowel uses 11 feedforward and 11 feedback coefficients. The output is scaled by 0.5 for headroom.
+
+Modes:
+Mode 0 – Direct
+Vowel changes instantly with no transition. Uses a single filter path.
+
+Mode 1 – Crossfade
+Smoothly interpolates coefficients between the previous vowel and the new vowel. The Fade pin controls the blend position in real time:
+Fade = 0.0: Fully new vowel.
+Fade = 1.0: Fully previous vowel.
+The fade value is squared internally for a smoother perceptual curve.
+
+Pins:
+Input – Audio input signal
+Vowel – Enum (0 = A, 1 = E, 2 = I, 3 = O, 4 = U)
+Mode – Enum (0 = Direct, 1 = Crossfade)
+Fade – Float 0.0–1.0 (crossfade blend, used only in Crossfade mode)
+Output – Filtered audio output
+
+Usage:
+Ideal for vocal synthesis, formant morphing, speech-like textures, and experimental sound design. Use Crossfade mode with an automated Fade pin for smooth vowel transitions without clicks.
+
+Note: The filter is a 10th-order IIR (equivalent to 5 cascaded biquads). In Crossfade mode, changing the Fade pin in real time re-interpolates the coefficients immediately, allowing continuous timbral control between any two vowels.
