@@ -1,0 +1,14 @@
+100KB-5-BandPass-Filter is a multi-band resonant bandpass filter bank.
+Description:
+Up to five independent 2nd-order bandpass filters with selectable active band count and coefficient update rate.
+Pins:
+
+Input 1–5 – Audio inputs
+Frequency 1–5 – Center frequencies
+Resonance 1–5 – Bandwidth / Q
+Output 1–5 – Filtered outputs
+Active – Number of active bands (0–5)
+Update – Coefficient update rate
+
+Usage:
+Great for multi-band processing, formant filtering, or parallel resonant effects.

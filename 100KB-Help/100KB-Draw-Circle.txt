@@ -1,0 +1,12 @@
+100KB-Draw-Circle is a simple GUI circle drawer.
+
+Description
+Draws a filled circle with stroke on a colored background. Position, size, and colors are fully controllable.
+Pins
+
+Radius – Circle size
+XPos  YPos – Center position
+FillColor  StrokeColor  BgColor – Colors (hex)
+
+Usage
+Useful for custom meters, indicators, or simple visual feedback in the panel.
