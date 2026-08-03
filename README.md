@@ -46,4 +46,3 @@ Stores, reads, and writes float values with audio-rate indexing, optional file s
 
 ### **100KB-5-BandPass-Filter** – Multi-Band Bandpass
 Up to five independent resonant bandpass filters with selectable active band count. Great for multi-band processing and formant effects.
----
