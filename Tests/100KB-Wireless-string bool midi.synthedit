@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
+    <master_container type="Container" handle="797627040" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="10" handle="20540777" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="409496777" shortName="From DSP to GUI" ignorePC="true" private="true" module="1686729185" moduleParamId="0">
+                    <patch-list>
+                        <s>World</s>
+                    </patch-list>
+                </param>
+                <param type="4" handle="577871974" shortName="From DSP to GUI" ignorePC="true" private="true" module="1500906003" moduleParamId="0">
+                    <patch-list>
+                        <s>0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="580838828" shortName="From DSP to GUI" ignorePC="true" private="true" module="124571156" moduleParamId="0">
+                    <patch-list>
+                        <s>Hello &lt;&gt;World</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="965889560" shortName="QTN_Text2GUIText In" vstParameterNumber="27" module="1210718358" moduleParamId="0">
+                    <patch-list>
+                        <s>World</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="4" handle="1066913115" shortName="From GUI to DSP" ignorePC="true" private="true" module="1272736821" moduleParamId="0">
+                    <patch-list>
+                        <s>0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1390501495" ignorePC="true" stateful="false" module="1602177686" moduleParamId="0"/>
+                <param type="1" handle="1490544372" shortName="From GUI to DSP" ignorePC="true" private="true" module="775271724" moduleParamId="0">
+                    <patch-list>
+                        <s>World</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1797126409" ignorePC="true" private="true" stateful="false" module="1875253886" moduleParamId="0"/>
+                <param type="6" handle="1917350148" ignorePC="true" private="true" stateful="false" module="507341043" moduleParamId="0"/>
+                <param type="6" handle="2025260942" shortName="Float to Volts Float In" vstParameterNumber="26" module="2097156991" moduleParamId="0">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="QTN_GUIBool2Bool" handle="1272736821">
+                <structRect l="780" r="828" t="156" b="192"/>
+                <panelRect l="264" r="264" t="152" b="152"/>
+            </module>
+            <module type="SE Midi Monitor" handle="1602177686">
+                <structRect l="780" r="972" t="492" b="672"/>
+                <panelRect l="240" r="240" t="168" b="168"/>
+            </module>
+            <module type="SE Keyboard (MIDI)" handle="1024726156">
+                <structRect l="24" r="276" t="480" b="540"/>
+                <panelRect l="256" r="256" t="160" b="160"/>
+            </module>
+            <module type="100KB-Wireless-Receive-Midi" handle="98829233">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                </plugs>
+                <structRect l="576" r="648" t="480" b="516"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="100KB-Wireless-Send-Midi" handle="1916637097">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                </plugs>
+                <structRect l="324" r="396" t="480" b="516"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="QTN_GUIText2Text" handle="775271724">
+                <structRect l="768" r="816" t="372" b="408"/>
+                <panelRect l="288" r="288" t="208" b="208"/>
+            </module>
+            <module type="Text Entry" handle="1210718358">
+                <plugs>
+                    <plug parameterId="-1" idx="9"/>
+                    <plug parameterId="-1"/>
+                </plugs>
+                <structRect l="12" r="120" t="396" b="444"/>
+                <panelRect l="232" r="232" t="176" b="176"/>
+            </module>
+            <module type="Container" handle="1613055476" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug name="String" datatype="1" idx="7"/>
+                    <plug name="Out" datatype="1"/>
+                    <plug/>
+                </plugs>
+                <structRect l="864" r="1020" t="300" b="384"/>
+                <modules>
+                    <module type="QTN_Text2GUIText" handle="124571156">
+                        <structRect l="288" r="348" t="96" b="132"/>
+                        <panelRect l="344" r="345" t="256" b="257"/>
+                    </module>
+                    <module type="DAM_GUI Text Enter" handle="148167886">
+                        <plugs>
+                            <plug default="1" idx="2"/>
+                            <plug default="0"/>
+                            <plug default="0"/>
+                            <plug default="0" idx="8"/>
+                            <plug default="1" idx="14"/>
+                            <plug default="0" idx="18"/>
+                            <plug default="1" idx="25"/>
+                        </plugs>
+                        <structRect l="420" r="600" t="108" b="432"/>
+                        <panelRect l="24" r="160" t="32" b="64"/>
+                    </module>
+                    <module type="DAM_DSP Text Combine" handle="413838241">
+                        <plugs>
+                            <plug default=" &lt;&gt;" idx="1"/>
+                            <plug name="String"/>
+                            <plug name="Out" id="3"/>
+                            <plug id="4"/>
+                        </plugs>
+                        <structRect l="168" r="252" t="120" b="180"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="IO Mod" handle="1564646065">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="744" r="804" t="48" b="60"/>
+                    </module>
+                    <module type="IO Mod" handle="338809070">
+                        <plugs>
+                            <plug name="String" direction="1" datatype="1" tiedtomod="1613055476" tiedtopin="7"/>
+                            <plug name="Out" direction="1" datatype="1" tiedtomod="1613055476" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="24" r="84" t="144" b="180"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="220059676" lineType="1" fMod="413838241" tMod="124571156" tPlg="4"/>
+                    <line type="Line" handle="1046502134" lineType="1" fMod="124571156" tMod="148167886" fPlg="2"/>
+                    <line type="Line" handle="125983710" lineType="1" fMod="338809070" tMod="413838241" tPlg="2"/>
+                    <line type="Line" handle="1833460753" lineType="1" fMod="338809070" tMod="413838241" fPlg="1" tPlg="3"/>
+                </lines>
+                <PanelWndPosition l="0" r="0" t="0" b="0"/>
+                <PanelLocation l="-7" r="1061" t="-7" b="752"/>
+                <StructLocation l="0" r="806" t="0" b="588"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="1" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="QTN_Text2GUIText" handle="1686729185">
+                <structRect l="192" r="252" t="372" b="408"/>
+                <panelRect l="232" r="232" t="128" b="128"/>
+            </module>
+            <module type="SE:Fixed Values_Text" handle="1470497687">
+                <plugs>
+                    <plug name="String" default="Hello"/>
+                    <plug/>
+                </plugs>
+                <structRect l="36" r="120" t="300" b="324"/>
+            </module>
+            <module type="100KB-Wireless-Send-String-Gui" handle="891259978">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                </plugs>
+                <structRect l="336" r="408" t="372" b="408"/>
+                <panelRect l="224" r="224" t="152" b="152"/>
+            </module>
+            <module type="100KB-Wireless-Send-String" handle="562525626">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                </plugs>
+                <structRect l="336" r="408" t="288" b="324"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="100KB-Wireless-Receive-String-Gui" handle="2131390619">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                </plugs>
+                <structRect l="576" r="648" t="360" b="396"/>
+                <panelRect l="232" r="232" t="144" b="144"/>
+            </module>
+            <module type="100KB-Wireless-Receive-String" handle="939098345">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                </plugs>
+                <structRect l="564" r="636" t="300" b="336"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="Container" handle="158775702" name="LED2" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Signal in" default="10"/>
+                    <plug direction="1"/>
+                </plugs>
+                <structRect l="960" r="1032" t="168" b="228"/>
+                <modules>
+                    <module type="SE PatchMemory Float Out" handle="507341043">
+                        <structRect l="267" r="387" t="36" b="108"/>
+                        <panelRect l="41" r="41" t="23" b="23"/>
+                    </module>
+                    <module type="Image3" handle="2137217413">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="1468728944" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="VoltsToFloat" handle="182787420">
+                        <plugs>
+                            <plug default="20" idx="2"/>
+                        </plugs>
+                        <structRect l="100" r="184" t="42" b="90"/>
+                    </module>
+                    <module type="IO Mod" handle="920728892">
+                        <plugs>
+                            <plug name="Signal in" direction="1" tiedtomod="158775702" tiedtopin="7"/>
+                            <plug direction="1"/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="66"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="126276218" lineType="1" fMod="507341043" tMod="2137217413" fPlg="8"/>
+                    <line type="Line" handle="1729876746" lineType="1" fMod="182787420" tMod="507341043" fPlg="3" tPlg="11"/>
+                    <line type="Line" handle="2040258746" lineType="1" fMod="920728892" tMod="182787420"/>
+                </lines>
+                <PanelWndPosition l="206" r="226" t="208" b="228"/>
+                <PanelLocation l="318" r="429" t="12" b="75"/>
+                <StructLocation l="257" r="883" t="12" b="384"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="160" cy="184"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="QTN_Bool2GUIBool" handle="1500906003">
+                <structRect l="192" r="252" t="144" b="180"/>
+                <panelRect l="248" r="248" t="176" b="176"/>
+            </module>
+            <module type="Container" handle="13981" name="LED2" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Signal in" default="10"/>
+                    <plug direction="1"/>
+                </plugs>
+                <structRect l="816" r="888" t="48" b="108"/>
+                <modules>
+                    <module type="SE PatchMemory Float Out" handle="1875253886">
+                        <structRect l="267" r="387" t="36" b="108"/>
+                        <panelRect l="41" r="41" t="23" b="23"/>
+                    </module>
+                    <module type="Image3" handle="1375805214">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="180916996" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="VoltsToFloat" handle="23792">
+                        <plugs>
+                            <plug default="20" idx="2"/>
+                        </plugs>
+                        <structRect l="100" r="184" t="42" b="90"/>
+                    </module>
+                    <module type="IO Mod" handle="4631">
+                        <plugs>
+                            <plug name="Signal in" direction="1" tiedtomod="13981" tiedtopin="7"/>
+                            <plug direction="1"/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="66"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="19732" lineType="1" fMod="4631" tMod="23792"/>
+                    <line type="Line" handle="1486968274" lineType="1" fMod="23792" tMod="1875253886" fPlg="3" tPlg="11"/>
+                    <line type="Line" handle="561701519" lineType="1" fMod="1875253886" tMod="1375805214" fPlg="8"/>
+                </lines>
+                <PanelWndPosition l="134" r="154" t="112" b="132"/>
+                <PanelLocation l="318" r="429" t="12" b="75"/>
+                <StructLocation l="257" r="883" t="12" b="384"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="88" cy="88"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="Container" handle="1472868901" name="100KB BT Bool" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Out" direction="1" datatype="4" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="60" r="120" t="48" b="118"/>
+                <modules>
+                    <module type="SE VoltsToBool" handle="1827730987">
+                        <structRect l="504" r="552" t="288" b="312"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="FloatToVolts" handle="1633476628">
+                        <structRect l="384" r="468" t="264" b="300"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="2097156991">
+                        <structRect l="240" r="360" t="204" b="288"/>
+                        <panelRect l="296" r="296" t="216" b="216"/>
+                    </module>
+                    <module type="Image3" handle="1686007850">
+                        <plugs>
+                            <plug default="Button.bmp" idx="1"/>
+                            <plug default="2" idx="9"/>
+                        </plugs>
+                        <structRect l="492" r="612" t="96" b="214"/>
+                        <panelRect l="104" r="122" t="88" b="118"/>
+                    </module>
+                    <module type="IO Mod" handle="1948523436">
+                        <plugs>
+                            <plug name="Out" datatype="4" tiedtomod="1472868901" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="612" r="672" t="300" b="324"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="429614704" lineType="1" fMod="1827730987" tMod="1948523436" fPlg="1"/>
+                    <line type="Line" handle="1331803776" lineType="1" fMod="1633476628" tMod="1827730987" fPlg="2"/>
+                    <line type="Line" handle="1974198491" lineType="1" fMod="2097156991" tMod="1686007850" fPlg="8">
+                        <nodes>
+                            <node x="462" y="234"/>
+                            <node x="462" y="102"/>
+                        </nodes>
+                    </line>
+                    <line type="Line" handle="113618942" lineType="1" fMod="2097156991" tMod="1633476628" fPlg="13" tPlg="1"/>
+                </lines>
+                <PanelWndPosition l="208" r="226" t="216" b="246"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="-7" r="1073" t="-7" b="752"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="104" cy="128"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="100KB-Wireless-Send-Bool-Gui" handle="1813086924">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                </plugs>
+                <structRect l="336" r="408" t="144" b="180"/>
+                <panelRect l="240" r="240" t="136" b="136"/>
+            </module>
+            <module type="100KB-Wireless-Receive-Bool-Gui" handle="1934868231">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                </plugs>
+                <structRect l="576" r="648" t="144" b="180"/>
+                <panelRect l="240" r="240" t="168" b="168"/>
+            </module>
+            <module type="100KB-Wireless-Send-Bool" handle="2145343815">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                </plugs>
+                <structRect l="336" r="408" t="48" b="84"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="100KB-Wireless-Receive-Bool" handle="1371211262">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                </plugs>
+                <structRect l="564" r="636" t="48" b="84"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="SE Structure Group2" handle="1988036128" name="parrer">
+                <plugs>
+                    <plug default="parrer"/>
+                    <plug default="8A0303"/>
+                </plugs>
+                <structRect l="480" r="504" t="12" b="720"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="1412514669" lineType="1" fMod="1472868901" tMod="2145343815" fPlg="7" tPlg="1"/>
+            <line type="Line" handle="1623870279" lineType="1" fMod="1371211262" tMod="13981" fPlg="1" tPlg="7"/>
+            <line type="Line" handle="792966071" lineType="1" fMod="1500906003" tMod="1813086924" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="516689113" lineType="1" fMod="1472868901" tMod="1500906003" fPlg="7" tPlg="4">
+                <nodes>
+                    <node x="150" y="66"/>
+                    <node x="150" y="174"/>
+                </nodes>
+            </line>
+            <line type="Line" handle="1616864886" lineType="1" fMod="1470497687" tMod="562525626" tPlg="1"/>
+            <line type="Line" handle="642507181" lineType="1" fMod="1686729185" tMod="891259978" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="437490743" lineType="1" fMod="1210718358" tMod="1686729185" fPlg="6" tPlg="4"/>
+            <line type="Line" handle="1091356582" lineType="1" fMod="2131390619" tMod="775271724" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="1896141069" lineType="1" fMod="939098345" tMod="1613055476" fPlg="1" tPlg="7"/>
+            <line type="Line" handle="725022912" lineType="1" fMod="775271724" tMod="1613055476" fPlg="4" tPlg="8">
+                <nodes>
+                    <node x="858" y="402"/>
+                    <node x="858" y="330"/>
+                </nodes>
+            </line>
+            <line type="Line" handle="1454458349" lineType="1" fMod="1024726156" tMod="1916637097" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="476093208" lineType="1" fMod="98829233" tMod="1602177686" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="10151811" lineType="1" fMod="1934868231" tMod="1272736821" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="411797265" lineType="1" fMod="1272736821" tMod="158775702" fPlg="4" tPlg="7"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="-7" r="1073" t="-7" b="752"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="1"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="100KB-Wireless-Receive-Bool" name="100KB-Wireless-Receive-Bool" flags="256" category="100KB-Modules/Utility/Wireless/Dsp/Bool">
+            <Audio>
+                <Pin name="Channel" datatype="int" default="1"/>
+                <Pin name="Bool" datatype="bool" direction="out" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="100KB-Wireless-Receive-Bool-Gui" name="100KB-Wireless-Receive-Bool-Gui" flags="384" category="100KB-Modules/Utility/Wireless/Gui/Bool">
+            <GUI>
+                <Pin name="Channel" datatype="int" default="1"/>
+                <Pin name="Bool" datatype="bool" direction="out" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="100KB-Wireless-Receive-Midi" name="100KB-Wireless-Receive-Midi" flags="256" category="100KB-Modules/Utility/Wireless/Dsp/Midi">
+            <Audio>
+                <Pin name="Channel" datatype="int" default="1"/>
+                <Pin name="Midi" datatype="midi" direction="out" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="100KB-Wireless-Receive-String" name="100KB-Wireless-Receive-String" flags="256" category="100KB-Modules/Utility/Wireless/Dsp/String">
+            <Audio>
+                <Pin name="Channel" datatype="int" default="1"/>
+                <Pin name="String" datatype="string" direction="out" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="100KB-Wireless-Receive-String-Gui" name="100KB-Wireless-Receive-String-Gui" flags="384" category="100KB-Modules/Utility/Wireless/Gui/String">
+            <GUI>
+                <Pin name="Channel" datatype="int" default="1"/>
+                <Pin name="String" datatype="string" direction="out" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="100KB-Wireless-Send-Bool" name="100KB-Wireless-Send-Bool" flags="256" category="100KB-Modules/Utility/Wireless/Dsp/Bool">
+            <Audio>
+                <Pin name="Channel" datatype="int" default="1"/>
+                <Pin name="Bool" datatype="bool" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="100KB-Wireless-Send-Bool-Gui" name="100KB-Wireless-Send-Bool-Gui" flags="384" category="100KB-Modules/Utility/Wireless/Gui/Bool">
+            <GUI>
+                <Pin name="Channel" datatype="int" default="1"/>
+                <Pin name="Bool" datatype="bool" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="100KB-Wireless-Send-Midi" name="100KB-Wireless-Send-Midi" flags="256" category="100KB-Modules/Utility/Wireless/Dsp/Midi">
+            <Audio>
+                <Pin name="Channel" datatype="int" default="1"/>
+                <Pin name="Midi" datatype="midi" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="100KB-Wireless-Send-String" name="100KB-Wireless-Send-String" flags="256" category="100KB-Modules/Utility/Wireless/Dsp/String">
+            <Audio>
+                <Pin name="Channel" datatype="int" default="1"/>
+                <Pin name="String" datatype="string" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="100KB-Wireless-Send-String-Gui" name="100KB-Wireless-Send-String-Gui" flags="384" category="100KB-Modules/Utility/Wireless/Gui/String">
+            <GUI>
+                <Pin name="Channel" datatype="int" default="1"/>
+                <Pin name="String" datatype="string" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="DAM_DSP Text Combine" name="DAM Text Combine" flags="256" category="DAM/DSP/Text">
+            <Audio>
+                <Pin name="Text Output" datatype="string" direction="out"/>
+                <Pin name="Separator" datatype="string" default=" "/>
+                <Pin name="Spare" datatype="string" autoRename="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="DAM_GUI Text Enter" name="DAM Text Enter" flags="384" category="DAM/GUI/Text" helpUrl="../../../Common Files/SynthEdit/modules/DAM/DAM_GUI_HELP/DAM_TEXTENTER.htm">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string" default="DAM"/>
+                <Pin name="*Style" datatype="string" default="normal" isMinimised="true"/>
+                <Pin name="Multiline" datatype="bool"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Transparent Text" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Text Displayed" datatype="enum" isMinimised="true" metadata=" Normal, Append Text, Prepend Text"/>
+                <Pin name="Text Static" datatype="string" default="Hz"/>
+                <Pin name="Font" datatype="string" default="Arial"/>
+                <Pin name="Font Size" datatype="float" default="16"/>
+                <Pin name="Font Weight" datatype="enum" default="9" isMinimised="true" metadata="Thin, Extra Light, Light, Normal, Medium, Semi Bold, Bold, Ultra Bold, Heavy, Ultra Black"/>
+                <Pin name="Font Style" datatype="enum" isMinimised="true" metadata="Normal, Oblique, Italic"/>
+                <Pin name="Font Alignment" datatype="enum" isMinimised="true" metadata=" Center, Leading, Trailing"/>
+                <Pin name="Font PC Y Offset" datatype="float"/>
+                <Pin name="Font Mac Y Offset" datatype="float" default="-2"/>
+                <Pin name="Font ARGB" datatype="string" default="FF000000"/>
+                <Pin name="Gradient OFF/ON" datatype="bool"/>
+                <Pin name="BG Top ARGB" datatype="string" default="FFFFFFFF"/>
+                <Pin name="BG Bottom ARGB" datatype="string" default="FF000000"/>
+                <Pin name="Gradient Point A X" datatype="float"/>
+                <Pin name="Gradient Point A Y" datatype="float"/>
+                <Pin name="Gradient Point B X" datatype="float"/>
+                <Pin name="Gradient Point B Y" datatype="float" default="30"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+                <Pin name="Width" datatype="string" direction="out"/>
+                <Pin name="Height" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="FloatToVolts" class="1" name="Float to Volts" flags="256" category="Conversion">
+            <Audio>
+                <Pin name="Smoothing" datatype="enum" default="2" metadata="None,Fast (4 samp),Smooth (30ms)"/>
+                <Pin name="Float In" datatype="float"/>
+                <Pin name="Volts Out" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Image3" name="Image2" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Mouse Response" datatype="enum" default="-1" isMinimised="true" metadata="off=-2, auto=-1, vertical=0, horizontal=1, clicks=2, rotary=3, step=4"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="QTN_Bool2GUIBool" name="QTN_Bool2GUIBool" flags="384" category="QTN/DSP2GUI">
+            <Parameters>
+                <Parameter id="0" datatype="bool" name="From DSP to GUI" private="true" ignorePatchChange="true"/>
+            </Parameters>
+            <Audio>
+                <Pin name="ToGUI" datatype="bool" direction="out" private="true" parameterId="0"/>
+                <Pin name="In" datatype="bool"/>
+            </Audio>
+            <GUI>
+                <Pin name="From DSP" datatype="bool" private="true" parameterId="0"/>
+                <Pin name="L-Out" datatype="bool"/>
+                <Pin name="R-Out" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="QTN_GUIBool2Bool" name="QTN_GUIBool2Bool" flags="384" category="QTN/GUI2DSP">
+            <Parameters>
+                <Parameter id="0" datatype="bool" name="From GUI to DSP" private="true" ignorePatchChange="true"/>
+            </Parameters>
+            <Audio>
+                <Pin name="FromGUI" datatype="bool" private="true" parameterId="0"/>
+                <Pin name="Out" datatype="bool" direction="out"/>
+            </Audio>
+            <GUI>
+                <Pin name="To DSP" datatype="bool" private="true" parameterId="0"/>
+                <Pin name="L-In" datatype="bool"/>
+                <Pin name="R-In" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="QTN_GUIText2Text" name="QTN_GUIText2Text" flags="384" category="QTN/GUI2DSP">
+            <Parameters>
+                <Parameter id="0" datatype="string" name="From GUI to DSP" private="true" ignorePatchChange="true"/>
+            </Parameters>
+            <Audio>
+                <Pin name="FromGUI" datatype="string" private="true" parameterId="0"/>
+                <Pin name="Out" datatype="string" direction="out"/>
+            </Audio>
+            <GUI>
+                <Pin name="To DSP" datatype="string" private="true" parameterId="0"/>
+                <Pin name="L-In" datatype="string"/>
+                <Pin name="R-In" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="QTN_Text2GUIText" name="QTN_Text2GUIText" flags="384" category="QTN/DSP2GUI">
+            <Parameters>
+                <Parameter id="0" datatype="string" name="From DSP to GUI" private="true" ignorePatchChange="true"/>
+            </Parameters>
+            <Audio>
+                <Pin name="ToGUI" datatype="string" direction="out" private="true" parameterId="0"/>
+                <Pin name="In" datatype="string"/>
+            </Audio>
+            <GUI>
+                <Pin name="From DSP" datatype="string" private="true" parameterId="0"/>
+                <Pin name="L-Out" datatype="string"/>
+                <Pin name="R-Out" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE ImageTinted XP" name="Image Tinted (XP)" flags="384" category="Debug/DirectX">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Hue" datatype="float" direction="out" private="true"/>
+                <Pin name="Saturation" datatype="float" direction="out" private="true"/>
+                <Pin name="Brightness" datatype="float" direction="out" private="true"/>
+                <Pin name="Hue" datatype="float"/>
+                <Pin name="Saturation" datatype="float" default="1"/>
+                <Pin name="Brightness" datatype="float" default="1"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Keyboard (MIDI)" name="Keyboard (MIDI)" flags="384" category="Controls">
+            <Audio>
+                <Pin name="Channel" datatype="enum" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui"/>
+        </Plugin>
+        <Plugin id="SE Midi Monitor" name="Midi Monitor" flags="384" category="Diagnostic">
+            <Parameters>
+                <Parameter id="0" datatype="string" name="" ignorePatchChange="true" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="MIDI In" datatype="midi"/>
+                <Pin name="Disp Out" datatype="string" direction="out" private="true" parameterId="0"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Disp In" datatype="string" private="true" parameterId="0"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Float" name="PatchMemory Float3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="float" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Float Out" name="PatchMemory Float Out3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="float" name="" ignorePatchChange="true" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="float"/>
+                <Pin name="PM Value Out" datatype="float" direction="out" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin name="PM Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="PM Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="PM Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="PM Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="float" direction="out"/>
+                <Pin name="Value Out" datatype="float" isMinimised="true"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Structure Group2" name="Structure Group" flags="256" category="Controls">
+            <GUI graphicsApi="GmpiGui" DisplayOnPanel="false">
+                <Pin name="Text" datatype="string" default="Structure Group" isMinimised="true"/>
+                <Pin name="Color" datatype="string" default="40575CDB" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE VoltsToBool" name="Volts to Bool" flags="33554688" category="Conversion" helpUrl="converters.htm">
+            <Audio>
+                <Pin name="In" datatype="float" rate="audio"/>
+                <Pin name="Out" datatype="bool" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE:Fixed Values_Text" class="1" name="Fixed Values (text)" flags="4352" category="Controls">
+            <Audio>
+                <Pin name="Spare Value" datatype="string" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Text Entry" class="1" name="Text Entry" flags="4480" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="string" name="patchValue"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi" private="true"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
+                <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
+                <Pin name="Ignore Program Change" datatype="bool" private="true"/>
+                <Pin name="MIDI NRPN" datatype="enum" private="true" metadata="range 0,16255"/>
+                <Pin name="Text Out" datatype="string" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Show Title On Panel" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="patchValue" datatype="string" default="0" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin id="9" name="patchValue" datatype="string" direction="out" private="true" parameterId="0"/>
+                <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="VoltsToFloat" class="1" name="Volts to Float" flags="256" category="Old">
+            <Audio>
+                <Pin name="Volts In" datatype="float" rate="audio" linearInput="true" metadata="None,Fast (4 samp),Smooth (30ms)"/>
+                <Pin name="Response" datatype="enum" default="4" metadata="dB VU,dB PPM,dB Peak,dB HeadRoom, Volts DC (Fast), Volts DC Average, Volts RMS, Clip Detect"/>
+                <Pin name="Update Rate" datatype="enum" default="10" metadata="1 Hz=1,5 Hz=5,10 Hz=10,20 Hz=20,40 Hz=40,60 Hz=60"/>
+                <Pin name="Float Out" datatype="float" direction="out"/>
+            </Audio>
+        </Plugin>
+    </PluginList>
+</Document>
